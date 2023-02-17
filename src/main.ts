@@ -12,7 +12,7 @@ const options = new DocumentBuilder()
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  app.setGlobalPrefix('/api/file-upload/')
+  app.setGlobalPrefix('/api/file-manage/')
 
   const document = SwaggerModule.createDocument(app, options);
   SwaggerModule.setup('config', app, document);
